@@ -1,0 +1,9 @@
+version: "3"
+services:
+  php:
+    image: php:7.3-apache
+    volumes:
+      - ./html:/var/www/html
+      - /var/lib/samba:/var/lib/samba
+    ports:
+      - "8080:80"
